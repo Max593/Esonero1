@@ -10,10 +10,11 @@ public class MyBinTree implements BinTree {
     private List<BinTree> children = new ArrayList<>();
     private boolean leaf;
 
-    public MyBinTree(int n, BinTree t1, BinTree t2) {
+    public MyBinTree(int n, BinTree t1, BinTree t2) {  //Nodo con 2 nodi figli
         this.root = n;
         children.add(t1);
         children.add(t2);
+        leaf = false;
     }
     public MyBinTree(int n, int t1, int t2) {  //Nodo con 2 foglie
         this.root = n;
